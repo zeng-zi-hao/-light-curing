@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設定時間</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="init">中止</button>
+        <br><br>
+        <button @click="fifteen_btn">15 分鐘</button>
+        <button @click="thirty_btn">30 分鐘</button>
+        <button @click="forty_five_btn">45 分鐘</button>
+        <br><br>        
+        自訂
+
+        <select>
+            <option>1</option>
+            <option>2</option>
+        </select>分
+
+        <select>
+            <option>1</option>
+            <option>2</option>
+        </select>秒
+        
+        <button>開始</button>
+        
+        <h2> {{ min }} {{colon}} {{ sec }} </h2>
+        <h2> {{ state }} </h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
